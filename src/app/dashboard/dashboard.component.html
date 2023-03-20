@@ -1,0 +1,96 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 p-0">
+            <nav class="shadow resp">
+                <img src="../assets/logo.png" class="logo" alt="">
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 p-3">
+            <span>Lorem ipsum is a dummy text</span>
+            <button class="btn btn-danger float-right" [disabled]="isDisabled" (click)="openBulkDeleteDialog()"> Delete
+            </button>
+            <div class="bulk-delete-dialog " *ngIf="isOpenBulkDeleteDialog">
+                <div class="row">
+                    <div class="col-lg-2 resp-bulk-delet pl-0 resp m-0">
+                            <img src="../assets/Icon.png" class="cancel-icon" height="100%" alt="icon">
+                    </div>
+                    <div class="col-lg-10 mt-2 resp-bulk-options">
+                        <span>Are you sure want to delete?</span>
+                        <div class="btn-resp-bulk">
+                            <button class="confirm-btn" (click)="bulkDelete()">Yes</button>
+                            <button class="cancel-btn" (click)="closeBulkDeleteDialog()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table matSort (matSortChange)="sortData($event)" height="" class="table1 table-responsive" border="1">
+                <tr>
+                    <th class="checkbox"><input type="checkbox"> </th>
+                    <th class="rows" mat-sort-header="username">User Name &nbsp; <img src="../assets/sort.png" alt="">
+                    </th>
+                    <th class="rows" mat-sort-header="phonenumber">Phone Number &nbsp; <img src="../assets/sort.png"
+                            alt=""> </th>
+                    <th class="rows" mat-sort-header="emailid">Email ID &nbsp; <img src="../assets/sort.png" alt="">
+                    </th>
+                    <th>
+                        <span class="float-right"> Options
+                            <img src="../assets/Vector.png" alt="">
+                        </span>
+                    </th>
+                </tr>
+                <ng-container *ngIf="sortData.length>0">
+                    <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+                        <tr cdkDrag cdkDragLockAxis="y" *ngFor="let user of sortedData;">
+                            <td class="checkbox"><input type="checkbox" value="{{user.id}}"
+                                    (change)="getCheckdData($event)"> </td>
+                            <td class="rows">{{user.username}}</td>
+                            <td class="rows">{{user.phonenumber}}</td>
+                            <td class="rows">{{user.emailid}}</td>
+                            <td>
+                                <span class="options-visibility">
+                                <button class="delete-btn" cdkDragHandle>
+                                    <img src="../assets/Secondary.png" class="delete-icon" alt="">
+                                </button>
+                                <button class="delete-btn" type="button" (click)="openDeleteDialog(user.id)">
+                                    <img src="../assets/delete.png" class="delete-icon" alt="">
+                                </button>
+                                <div class="delete-dialog " *ngIf="isOpenDeleteDialog">
+                                    <div class="row">
+                                        <div class="col-lg-2 pl-0 m-0">
+                                            <img src="../assets/Icon.png" class="cancel-icon"  height="100%" alt="icon">
+                                        </div>
+                                        <div class="col-lg-10 dialog-resp mt-2">
+                                            <span>Are you sure want to delete?</span>
+                                            <div class="btn-resp">
+                                                <button class="confirm-btn" type="button" (click)="deleteSingleUSer()">
+                                                    Yes</button>
+                                                <button class="cancel-btn" (click)="closeDeleteDialog()">Cancel</button>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </ng-container>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 mt-5 mb-5">
+            <img src="../assets/successtoster.png" *ngIf="isTosterPopup" class="float-right" alt="">
+        </div>
+        <div class="col-lg-12 mb-5">
+            <img src="../assets/logintoster.png" *ngIf="isLoginToster" class="float-right" alt="">
+        </div>
+    </div>
+</div>

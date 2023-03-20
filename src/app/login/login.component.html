@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+    <div class="row  main-row">
+        <div class="col-lg-7 p-0">
+            <div class="header-block">
+                <div class="ellipse"></div>
+                <div class="heading-section">
+                <span class="heading1"> <span class="bold-font">Digital</span>  Platform <br> for distance <span class="bold-font"> learning</span> </span>
+                <p class="sub-heading">Internet and online based digital technologies such as desktop <br> computers, mobile phones and other</p>
+                <img src="../assets/images/Group 3.png" class="group-img" alt="">
+                 </div>
+            </div>
+        </div>
+        <div class="col-lg-5 bg-dander">
+            <div class="login-section">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img src="../assets/images/image 1.png" class="logo" alt="">
+                    </div>
+                    <div class="col-lg-12 text-center margin-top">
+                        <img src="../assets/images/Vector.png" class="lock-img" alt="">
+                        <div class="mt-2 welcome">Welcome Back</div>
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" #username placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            <input type="password" 
+                            [style.border]="errorStyle"
+                            class=" passwordInput" #password placeholder="Password" aria-label="Password"
+                            (keyup)="getPasswordCheck($event)"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3" *ngIf="error">
+                            <div class="error"> <img src="../assets/error.png" alt=""> &nbsp; {{'Please enter atleast 8 character with number, symbol, capital and small letter'}}</div>
+                        </div>
+                        <h6 class="forgot">Forgot Password?</h6>
+                        <div class="text-center">
+                            <button class="login" (click)="login(username,password)">
+                               Login
+                            </button>
+                        </div>
+                       
+                        <p class="sign-up text-center mt-3">Don't have an Account? <strong class="sign-bold"> Sign Up</strong></p>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+</div>

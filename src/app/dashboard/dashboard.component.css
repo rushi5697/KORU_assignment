@@ -1,0 +1,170 @@
+nav {
+  padding: 15px;
+
+}
+th {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  width: 25%;
+  color: #737373;
+  padding: 5px;
+}
+span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+}
+td {
+  font-size: 10px;
+}
+.logo {
+  width: 112px;
+height: 31px;
+}
+.rows {
+  font-size: 13px;
+  padding: 7px;
+}
+
+.checkbox {
+  width: 30px;
+  text-align: center;
+}
+
+
+.delete-icon {
+  height: 100%;
+  width: 100%;
+}
+.delete-btn {
+  border: 1px solid silver;
+  background-color: transparent;
+  border-radius: 3px;
+  float: right;
+}
+.delete-dialog {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.confirm-btn {
+  background-color: #D94E3B;
+  height: 27px;
+  width: 42px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+.cancel-btn {
+  background-color: white;
+  border: 1px solid silver;
+  height: 27px;
+  font-size: 13px;
+  width: 54px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.bulk-delete-dialog {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top:200px;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  z-index: 999;
+}
+
+
+
+.options-visibility {
+  opacity: 0;
+}
+tr:hover .options-visibility {
+  opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .resp {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .delete-dialog {
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .cancel-icon {
+    height: 70px;
+    margin-top: 30px;
+  }
+  .dialog-resp {
+    position: relative;
+    top: -80px !important;
+    left: 50px;
+  }
+  .btn-resp {
+    top: 20px;
+    left: -10%;
+    position: relative;
+  }
+  .bulk-delete-dialog {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top:200px;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  z-index: 999;
+}
+.resp-bulk-delet {
+    position: absolute;
+    top: -20px;
+    left: -120px;
+}
+
+.resp-bulk-options {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+} 
+.btn-resp-bulk {
+  position: relative;
+  top: 20px;
+  left: -40px;
+}
+
+
+}

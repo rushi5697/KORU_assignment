@@ -1,0 +1,94 @@
+{
+  "userdata": [
+    {
+      "id": 4,
+      "username": "Bessie Cooper",
+      "phonenumber": "+7(123)072-36-61",
+      "emailid": "bessie.cooper@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 5,
+      "username": "Leslie Alexander",
+      "phonenumber": "+7(123)072-36-69",
+      "emailid": "lesile.alexander@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 6,
+      "username": "Guy Hawkins",
+      "phonenumber": "+7(123)029-76-75",
+      "emailid": "guy.hawkins@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 7,
+      "username": "Robert Fox",
+      "phonenumber": "+7(123)712-21-80",
+      "emailid": "robert.fox@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 9,
+      "username": "Bessie Cooper",
+      "phonenumber": "+7(123)712-21-31",
+      "emailid": "bessie.cooper@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 10,
+      "username": "Leslie Alexander",
+      "phonenumber": "+7(123)072-36-28",
+      "emailid": "lesile.alexander@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 11,
+      "username": "Dianne Russell",
+      "phonenumber": "+7(123)029-76-47",
+      "emailid": "dianne.russell@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 12,
+      "username": "Bessie Cooper",
+      "phonenumber": "+7(123)072-36-61",
+      "emailid": "bessie.cooper@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 13,
+      "username": "Leslie Alexander",
+      "phonenumber": "+7(123)072-36-28",
+      "emailid": "lesile.alexander@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 14,
+      "username": "Guy Hawkins",
+      "phonenumber": "+7(123)029-76-75",
+      "emailid": "guy.hawkins@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 15,
+      "username": "Robert Fox",
+      "phonenumber": "+7(123)712-21-80",
+      "emailid": "robert.fox@gmail.com",
+      "isChecked": false
+    },
+    {
+      "id": 16,
+      "username": "Wade Warren",
+      "phonenumber": "+7(123)072-36-28",
+      "emailid": "wade.warren@gmail.com",
+      "isChecked": false
+    }
+  ],
+  "user": [
+    {
+      "username": "John Doe",
+      "password": "KORU@123"
+    }
+  ]
+}
